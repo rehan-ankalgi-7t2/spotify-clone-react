@@ -1,0 +1,30 @@
+.login {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 120px;
+    gap: 24px;
+}
+
+.login img {
+    width: 80%;
+}
+
+.login button {
+    height: 48px;
+    padding: 8px 40px;
+    font-size: 16px;
+    color: var(--spotify-grey);
+    background-color: var(--spotify-green);
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+}
+
+.login button a {
+    color: var(--spotify-grey);
+    text-decoration: none;
+}
