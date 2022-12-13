@@ -10,6 +10,7 @@
 
 # production
 /build
+/music
 
 # misc
 .DS_Store

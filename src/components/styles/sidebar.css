@@ -1,0 +1,9 @@
+.sidebar {
+    height: 100vh;
+    background-color: black;
+    width: 24%;
+}
+
+.sidebar ul {
+    list-style: none;
+}

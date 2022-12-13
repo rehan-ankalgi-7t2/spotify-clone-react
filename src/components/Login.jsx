@@ -1,7 +1,7 @@
-import {React, useEffect, useState} from 'react'
+import {React} from 'react'
 import './styles/login.css'
 import spotifyLogo from '../assets/icons/spotify-logo-lg-white.png'
-import { getTokenFromUrl, loginUrl } from '../spotify'
+import { loginUrl } from '../spotify'
 
 const Login = () => {
   return (

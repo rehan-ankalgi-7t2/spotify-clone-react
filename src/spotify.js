@@ -7,7 +7,7 @@ export const authEndPoint = "https://accounts.spotify.com/authorize";
 const redirectUri = "http://localhost:3000/";
 
 const clientId = process.env.SPOTIFY_CLIENT_ID || "deeeb3e579574c00907faf1875a1a850";
-const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
+// const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
 
 // const scopes = "user-read-currently-playing \ user-read-recently-played \ user-read-playback-state \ user-top-ready \ user-modify-playback-state"
 
@@ -26,14 +26,14 @@ export const loginUrl = `${authEndPoint}?client_id=${clientId}&redirect_uri=${re
 
 export const getTokenFromUrl = () =>{
     const hash = window.location.hash
-      let _token = window.localStorage.getItem("token")
+    let _token = window.localStorage.getItem("token")
 
-      if (!_token && hash) {
-          _token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
+    if (!_token && hash) {
+        _token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
 
-          window.location.hash = ""
-          window.localStorage.setItem("token", _token)
-      }
+        window.location.hash = ""
+        // window.localStorage.setItem("token", _token)
+    }
 
-      return _token
+    return _token
 }

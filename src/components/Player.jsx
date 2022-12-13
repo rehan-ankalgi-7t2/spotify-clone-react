@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {  } from 'react'
+import Main from './Main';
 import Sidebar from './Sidebar'
+import './styles/player.css'
 
-const Player = ({user}) => {
+
+const Player = () => {
   return (
-    <div>
+    <div className='player'>
         <Sidebar/>
+        <Main/>
     </div>
   )
 }
