@@ -1,5 +1,9 @@
-.player {
+.player__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: calc(100vh - 100px);
+    width: 100vw;
 }
+
+

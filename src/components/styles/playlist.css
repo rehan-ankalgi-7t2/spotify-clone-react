@@ -1,0 +1,16 @@
+.playlist ul {
+    margin: 0;
+    padding: 0;
+}
+
+.playlist ul {
+    height: 31vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    overflow-y: scroll;
+}
+
+.playlist ul li{
+    height: 24px;
+    margin: 16px 0px;
+}

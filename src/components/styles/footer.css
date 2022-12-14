@@ -1,0 +1,69 @@
+.footer {
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background: #0e0e0e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px;
+    box-sizing: border-box;
+}
+
+.footer__left img {
+    height: 60px;
+}
+
+.footer__left, .footer__right {
+    width: 30%;
+}
+
+.footer__center {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.footer__center--top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__center--bottom {
+    width: 100%;
+}
+.footer__center .MuiSvgIcon-root:hover {
+    color: var(--spotify-green);
+    transition: all 0.2s ease-out;
+    transform: scale(1.2) !important;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+}
+
+.album-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+    height: 80px;
+    margin-left: 24px;
+}
+
+.footer__left .album-info p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer__left .album-info span {
+    font-size: 12px;
+}

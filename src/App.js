@@ -1,7 +1,6 @@
 import {React, useState, useEffect} from 'react';
 import { getTokenFromUrl } from './spotify';
 import './App.css';
-import Header from './components/Header';
 import Login from './components/Login';
 import Player from './components/Player';
 import SpotifyWebApi from 'spotify-web-api-js';
@@ -40,16 +39,26 @@ function App() {
             user: _user
           })
         })
+
+        spotify.getUserPlaylists(user)
+        .then(data => {
+          console.log('user playlists', data);
+          dispatch({
+            type: actionTypes.SET_USER_PLAYLISTS,
+            playlists: data.items
+          })
+        }, (err) => {
+          console.error(err);
+        });
       }
 
       console.log('i have the token 👉', _token);
-    }, [dispatch, token]);
+    }, [dispatch, token, user]);
 
     console.log("🧑", user)
 
   return (
     <div className="app">
-      <Header/>
       <div className='container'>
         {token ? (<Player/>) : (<Login/>)}
       </div>

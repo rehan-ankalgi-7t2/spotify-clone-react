@@ -1,9 +1,62 @@
 .sidebar {
-    height: 100vh;
+    height: 100%;
     background-color: black;
-    width: 24%;
+    flex: 0.2;
+    padding: 24px 24px  24px;
 }
 
-.sidebar ul {
+.sidebar h1 img {
+    width: 40px;
+}
+
+.sidebar h1 span {
+    margin-left: 12px;
+}
+
+.sidebar h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar ul.sidebar__top {
     list-style: none;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-flow: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar__top li a {
+    height: 40px; 
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar button {
+    background-color: var(--spotify-green);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.sidebar span p {
+    margin-left: 16px;
 }
