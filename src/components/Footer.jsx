@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles/footer.css'
 import cover from '../assets/images/jdm-cover.jpeg'
-import { PlayCircleFilledRounded, Repeat, Shuffle, SkipNext, SkipPrevious } from '@mui/icons-material'
-import { LinearProgress } from '@mui/material'
+import { PlayCircleFilledRounded, PlaylistPlay, Repeat, Shuffle, SkipNext, SkipPrevious, VolumeUp, VolumeDown } from '@mui/icons-material'
+import { LinearProgress, Stack, Slider, Grid } from '@mui/material'
 
 const Footer = () => {
   return (
@@ -27,7 +27,21 @@ const Footer = () => {
             </div>
         </div>
         <div className='footer__right'>
-            <p>volume controls</p>
+            <Grid container spacing={2}>
+                <Grid item>
+                    <PlaylistPlay/>
+                </Grid>
+                <Grid item>
+                    <VolumeDown />
+                </Grid>
+                <Grid item xs>
+                    <Slider aria-label="Volume" size='small' value={24} />
+                </Grid>
+                <Grid item>
+                    <VolumeUp />
+                </Grid>
+            </Grid>
+            
         </div>
     </div>
   )

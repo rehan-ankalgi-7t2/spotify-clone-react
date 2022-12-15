@@ -50,6 +50,13 @@ function App() {
         }, (err) => {
           console.error(err);
         });
+
+        spotify.getMyTopTracks(user)
+        .then(data => {
+          console.log('top tracks', data);
+        }, (err) => {
+          console.error(err);
+        })
       }
 
       console.log('i have the token 👉', _token);

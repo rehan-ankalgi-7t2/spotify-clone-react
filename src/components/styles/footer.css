@@ -67,3 +67,12 @@
 .footer__left .album-info span {
     font-size: 12px;
 }
+
+.footer__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}

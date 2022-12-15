@@ -1,25 +1,46 @@
 .main {
     height: 100%;
-    flex: 0.8;
-    padding: 40px;
+    flex: 0.83;
+    padding: 24px;
     box-sizing: border-box;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-flow: column;
+    background: linear-gradient(var(--spotify-green), transparent);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
 }
 
 .main h1 {
-    font-size: 40px;
-    margin-left: 40px;
-    font-size: 48px;
+    font-size: 80px;
+    line-height: 0.2;
+}
+
+.main__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 100px;
+    height: 200px;
 }
 
 .main img {
-    width: 160px;
+    width: 200px;
 }
 
 .main__avatar {
     height: 160px;
     width: 160px;
     background: linear-gradient(45deg, rgba(0, 255, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.main__tracks {
+    height: 100%;
+    margin-top: 24px;
+    overflow-y: scroll;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
 }
